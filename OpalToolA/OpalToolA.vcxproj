@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{919A2EF4-58C8-B0F7-0E8C-2A02D5E5E715}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>OpalToolA</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="working\Utilities.cpp" />
+    <ClCompile Include="working\Admin.cpp" />
+    <ClCompile Include="working\AtaDrive.cpp" />
+    <ClCompile Include="working\ByteTable.cpp" />
+    <ClCompile Include="working\ChangePassword.cpp" />
+    <ClCompile Include="working\CryptInfo.cpp" />
+    <ClCompile Include="working\GetByteTable.cpp" />
+    <ClCompile Include="working\GetRange.cpp" />
+    <ClCompile Include="working\GetSp.cpp" />
+    <ClCompile Include="working\GetTable.cpp" />
+    <ClCompile Include="working\GetUser.cpp" />
+    <ClCompile Include="working\Level0.cpp" />
+    <ClCompile Include="working\Main.cpp" />
+    <ClCompile Include="working\MbrControl.cpp" />
+    <ClCompile Include="working\Memory.cpp" />
+    <ClCompile Include="working\Msid.cpp" />
+    <ClCompile Include="working\Progress.cpp" />
+    <ClCompile Include="working\Random.cpp" />
+    <ClCompile Include="working\Ranges.cpp" />
+    <ClCompile Include="working\SpManagement.cpp" />
+    <ClCompile Include="working\stdafx.cpp" />
+    <ClCompile Include="working\Table.cpp" />
+    <ClCompile Include="working\TableDisplay.cpp" />
+    <ClCompile Include="working\Tcg.cpp" />
+    <ClCompile Include="working\TcgExplorer.cpp" />
+    <ClCompile Include="working\TestPassword.cpp" />
+    <ClCompile Include="working\Token.cpp" />
+    <ClCompile Include="working\Uid.cpp" />
+    <ClCompile Include="working\Users.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="working\debugTrace.h" />
+    <ClInclude Include="working\Utilities.h" />
+    <ClInclude Include="working\Admin.h" />
+    <ClInclude Include="working\AtaDrive.h" />
+    <ClInclude Include="working\ByteTable.h" />
+    <ClInclude Include="working\ChangePassword.h" />
+    <ClInclude Include="working\CryptInfo.h" />
+    <ClInclude Include="working\GetByteTable.h" />
+    <ClInclude Include="working\GetRange.h" />
+    <ClInclude Include="working\GetSp.h" />
+    <ClInclude Include="working\GetTable.h" />
+    <ClInclude Include="working\GetUser.h" />
+    <ClInclude Include="working\Level0.h" />
+    <ClInclude Include="working\MbrControl.h" />
+    <ClInclude Include="working\Memory.h" />
+    <ClInclude Include="working\Msid.h" />
+    <ClInclude Include="working\Packet.h" />
+    <ClInclude Include="working\PassThrough.h" />
+    <ClInclude Include="working\Progress.h" />
+    <ClInclude Include="working\Random.h" />
+    <ClInclude Include="working\Ranges.h" />
+    <ClInclude Include="working\resource.h" />
+    <ClInclude Include="working\SpManagement.h" />
+    <ClInclude Include="working\stdafx.h" />
+    <ClInclude Include="working\Storage.h" />
+    <ClInclude Include="working\Table.h" />
+    <ClInclude Include="working\TableDisplay.h" />
+    <ClInclude Include="working\targetver.h" />
+    <ClInclude Include="working\Tcg.h" />
+    <ClInclude Include="working\TcgExplorer.h" />
+    <ClInclude Include="working\TestPassword.h" />
+    <ClInclude Include="working\Token.h" />
+    <ClInclude Include="working\Uid.h" />
+    <ClInclude Include="working\Users.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="working\OpalTool.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

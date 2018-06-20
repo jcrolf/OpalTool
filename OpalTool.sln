@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpalToolC", "OpalToolC\OpalToolC.vcxproj", "{048B93DB-A3B0-4E07-B0EB-FDFAAE9EAD50}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpalToolA", "OpalToolA\OpalToolA.vcxproj", "{919A2EF4-58C8-B0F7-0E8C-2A02D5E5E715}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TakeControlTool", "TakeControlTool\TakeControlTool\TakeControlTool.vcxproj", "{5DB11073-1BC1-4A99-AD2C-AB6D36269812}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{048B93DB-A3B0-4E07-B0EB-FDFAAE9EAD50}.Debug|Win32.ActiveCfg = Debug|Win32
+		{048B93DB-A3B0-4E07-B0EB-FDFAAE9EAD50}.Debug|Win32.Build.0 = Debug|Win32
+		{048B93DB-A3B0-4E07-B0EB-FDFAAE9EAD50}.Release|Win32.ActiveCfg = Release|Win32
+		{048B93DB-A3B0-4E07-B0EB-FDFAAE9EAD50}.Release|Win32.Build.0 = Release|Win32
+		{919A2EF4-58C8-B0F7-0E8C-2A02D5E5E715}.Debug|Win32.ActiveCfg = Debug|Win32
+		{919A2EF4-58C8-B0F7-0E8C-2A02D5E5E715}.Debug|Win32.Build.0 = Debug|Win32
+		{919A2EF4-58C8-B0F7-0E8C-2A02D5E5E715}.Release|Win32.ActiveCfg = Release|Win32
+		{919A2EF4-58C8-B0F7-0E8C-2A02D5E5E715}.Release|Win32.Build.0 = Release|Win32
+		{5DB11073-1BC1-4A99-AD2C-AB6D36269812}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5DB11073-1BC1-4A99-AD2C-AB6D36269812}.Debug|Win32.Build.0 = Debug|Win32
+		{5DB11073-1BC1-4A99-AD2C-AB6D36269812}.Release|Win32.ActiveCfg = Release|Win32
+		{5DB11073-1BC1-4A99-AD2C-AB6D36269812}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
